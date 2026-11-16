@@ -1,5 +1,7 @@
 # Hotel booking cancellation prediction
 
+[![Run notebook](https://github.com/muntaka123/hotel-cancellation-prediction/actions/workflows/notebook.yml/badge.svg)](https://github.com/muntaka123/hotel-cancellation-prediction/actions/workflows/notebook.yml)
+
 Predicting whether a hotel booking will be cancelled, using only what the hotel knows when the booking is made.
 
 About a third of the bookings in this dataset are cancelled. A model that flags likely cancellations lets a hotel overbook more safely, follow up with guests, or ask for a deposit.
