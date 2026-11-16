@@ -1,0 +1,20 @@
+name: Run notebook
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+      - run: pip install -r requirements.txt
+      # Rebuild the notebook from its source and run every cell, so a broken cell fails the check.
+      - run: python build_notebook.py
+      - run: jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=1800 --output executed.ipynb hotel_cancellations.ipynb

@@ -53,7 +53,7 @@ Random forest on a held-out 30% test set (34,897 bookings):
 | One default decision tree, accuracy only (84.5%) | Two trees and a random forest; five metrics; cross-validation | Accuracy alone flatters a model when most bookings aren't cancelled |
 | Built-in tree importances | Permutation importance | Built-in importances favour features with many distinct values |
 
-## Run it
+## Run it locally
 
 You need Python 3.11 or newer.
 
@@ -71,7 +71,7 @@ python build_notebook.py
 jupyter nbconvert --to notebook --execute --inplace hotel_cancellations.ipynb
 ```
 
-## Data
+## Data and licences
 
 `data/hotel_bookings.csv` is the *Hotel booking demand* dataset: 119,390 bookings from a city hotel and a resort hotel in Portugal, July 2015 to August 2017.
 
@@ -81,4 +81,6 @@ The data belongs to its authors; see the article for its terms. The code in this
 
 ## Author
 
-Muntaka Mahdin: [LinkedIn](https://www.linkedin.com/in/muntaka-mahdin-2a80b8233/) · [Crime Lens](https://github.com/muntaka123/crime-lens)
+**Muntaka Mahdin** · [GitHub](https://github.com/muntaka123) · [LinkedIn](https://www.linkedin.com/in/muntaka-mahdin-2a80b8233/)
+
+More of my projects: [Crime Lens](https://github.com/muntaka123/crime-lens) · [Pet Activity Tracker](https://github.com/muntaka123/pet-activity-tracker) · [Card-G](https://github.com/muntaka123/card-g)
